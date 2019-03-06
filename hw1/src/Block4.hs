@@ -1,6 +1,8 @@
 {-# LANGUAGE InstanceSigs #-}
 module Block4
   ( splitOn
+  , Pair (..)
+  , NonEmpty (..)
   ) where
 
 data Pair a = Pair a a

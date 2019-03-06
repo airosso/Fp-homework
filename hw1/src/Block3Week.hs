@@ -1,5 +1,5 @@
 module Block3Week
-  ( Day
+  ( Day (..)
   , dayToInt
   , intToDay
   , nextDay

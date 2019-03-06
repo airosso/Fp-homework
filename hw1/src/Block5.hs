@@ -1,9 +1,12 @@
 module Block5
-  ( maybeConcat
+  ( NonEmpty (..)
+  , ThisOrThat (..)
+  , Name (..)
+  , Endo (..)
+  , maybeConcat
   , eitherConcat
   , fromString
   , toString
-  , getEndo
   ) where
 
 import Data.Either (lefts, rights)

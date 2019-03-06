@@ -1,5 +1,5 @@
 module Block3Tree
-  ( Tree
+  ( Tree (..)
   , isEmpty
   , countElems
   , findElem
