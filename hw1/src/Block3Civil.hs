@@ -8,7 +8,7 @@ module Block3Civil
   , buildNewHouse
   , lordToCastle
   , buildWalls
-  )where
+  ) where
 
 import Data.List.NonEmpty (NonEmpty (..), toList)
 
