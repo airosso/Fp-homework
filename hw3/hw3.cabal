@@ -16,19 +16,19 @@ extra-source-files:  README.md
 cabal-version:       >=1.10
 tested-with:         GHC == 8.0.1
 
-library
-  hs-source-dirs:      src
-  exposed-modules:
-  ghc-options:         -Wall
-  build-depends:       base >= 4.9 && < 5
-  default-language:    Haskell2010
-
-executable hw3
+executable mini-shell
   hs-source-dirs:      app
   main-is:             Main.hs
+  other-modules:       Parser, Runner
   ghc-options:         -Wall -Werror -threaded -rtsopts -with-rtsopts=-N
   build-depends:       base
-                     , hw3
+                     , transformers
+                     , process
+                     , filepath
+                     , megaparsec
+                     , directory
+                     , mtl
+                     , containers
   default-language:    Haskell2010
 
 test-suite hw3-test
@@ -36,6 +36,6 @@ test-suite hw3-test
   hs-source-dirs:      test
   main-is:             Spec.hs
   build-depends:       base
-                     , hw3
+                     , mini-shell
   ghc-options:         -Wall -Werror -threaded -rtsopts -with-rtsopts=-N
   default-language:    Haskell2010
